@@ -1,0 +1,479 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    background: #020228;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* Header  */
+header {
+    width: 100vw;
+}
+
+/* Menu Nav  */
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.Logo {
+    width: 10rem;
+    margin-left: 4rem;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.Logo img {
+    width: 100%;
+}
+
+/* Menu-text */
+.nav-text {
+    display: flex;
+    justify-content: left;
+}
+
+.nav-menu li {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-right: 1px solid #FFF;
+}
+
+.nav-menu li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-menu li a i {
+    padding-right: 1rem;
+}
+
+/* Menu Bars Hamburgesa */
+.btn-bars {
+    display: none;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+/* Landing header */
+.landin {
+    width: 100%;
+}
+
+.landin img {
+    width: 100%;
+    height: 75rem;
+}
+
+/* ------------ Fin Header----------- */
+/* main Container */
+main {
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Mint {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Timer Contador */
+.timer {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.timer img {
+    width: 55rem;
+}
+
+.cont-temporizador {
+    display: flex;
+    position: absolute;
+    top: 25rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8rem;
+}
+
+.cont-temporizador .bloque {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-temporizador .bloque div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #32B6EF;
+}
+
+.cont-temporizador .bloque p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #32B6EF;
+}
+
+.baner1 {
+    height: 50rem;
+    width: 100%;
+    background-image: url(/img/codenumber2.png);
+}
+
+.baner1 h2 {
+    padding-top: 10rem;
+    ;
+    font-weight: 900;
+    font-size: 4.8rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.baner1 p {
+    font-weight: 400;
+    font-size: 3.6rem;
+    text-align: center;
+    color: #32B6EF;
+}
+
+/* -------------------------- Rarity_Guide -------------------------*/
+.Rarity_Guide {
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contet-1 {
+    flex: 48%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 0;
+}
+
+.content-2 {
+    flex: 50%;
+    padding: 5rem;
+}
+
+.content-2 h3 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.content-2 p {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #32B6EF;
+}
+
+
+.container-box1 {
+    flex: 50%;
+    width: 100%;
+    background: #020228;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.box-item {
+    /* background: tomato; */
+    width: calc((100% - 2rem) / 3);
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.box-item img {
+    width: 100%;
+}
+
+.btn-1 {
+    margin-top: 3rem;
+    background: none;
+    width: 31rem;
+    height: 6.2rem;
+    border: 4px solid #32B6EF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.btn-1 a {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #32B6EF;
+}
+
+/* Roadmap */
+.roadmap-header {
+    height: 45rem;
+    width: 100%;
+    background-image: url(/img/codenumber2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-header img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.roadmap-header h4 {
+    margin-left: 10rem;
+}
+
+
+.roadmap-header h4 img {
+    width: 40rem;
+    height: 9.5rem;
+}
+
+/* .roadmap-content */
+.roadmap-contemt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.roadmap-contemt .link {
+    height: 9rem;
+    padding: 3rem 0;
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    justify-content: right;
+}
+
+.link a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #32B6EF;
+}
+
+.Conteiner-box2 {
+    height: 17rem;
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-value {
+    display: flex;
+    width: 9rem;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.box-title {
+    padding-left: 5rem;
+}
+
+.box-value span {
+    height: 7rem;
+    width: 9rem;
+}
+
+.Conteiner-box2 .box-value span>img {
+    width: 100%;
+}
+
+.box-value img {
+    width: 1rem;
+    height: 10rem;
+    max-height: 100%;
+}
+
+.box-title h4 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
+
+.box-title p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
+
+/* roadmap-item */
+.roadmap-item {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 15rem;
+    margin-bottom: 10rem;
+}
+
+.Container-box3 {
+    width: calc((100% - 14rem) / 3);
+    padding: 0 7rem;
+
+}
+
+.Container-box3 img {
+    width: 13rem;
+    height: 13rem;
+}
+
+.Container-box3 h5 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Container-box3 p {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* roadmap-whale */
+.roadmap-whale {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15rem;
+}
+
+.whale-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 101rem;
+    height: 38rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(141.09deg, rgba(219, 190, 255, 0.28) 1.51%, rgba(101, 16, 210, 0.28) 100.88%);
+    opacity: 0.7;
+    border-radius: 70px;
+    padding: 0 8rem;
+}
+
+.whale-container img {
+    width: 28rem;
+    height: 28rem;
+}
+
+.whale h2 {
+    font-weight: 900;
+    font-size: 3.6rem;
+    color: #FFFFFF;
+}
+
+.whale p {
+    font-weight: 400;
+    font-size: 3.6rem;
+    color: #FFFFFF;
+}
+
+/* banner-discord */
+.banner-discord {
+    background: url(/img/codenumber2.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 60rem;
+    padding: 15rem 30rem;
+}
+
+.banner-discord p {
+    font-weight: 800;
+    font-size: 3.6rem;
+    text-align: center;
+    color: #32B6EF;
+}
+
+
+.btn-discord {
+    margin-top: 4rem;
+    width: 53rem;
+    height: 7rem;
+    background: #32B6EF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.btn-discord i {
+    font-size: 3.6rem;
+}
+
+.btn-discord h6 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.6rem;
+    color: #FFFFFF;
+    padding-left: 2rem;
+}
