@@ -1,77 +1,98 @@
-/* Google font  */
+/* --------------------------- Google font  ----------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-/* CSS Reset */
+/* --------------------------- CSS Reset -------------------------- */
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
 }
 
 html {
     font-size: 62.5%;
-
 }
 
 body {
+    min-height: 200vh;
     background: #020228;
-    font-family: 'Tajawal', sans-serif;
 }
 
-/* Header  */
-header {
-    width: 100vw;
-}
-
-/* Menu Nav  */
+/* -------------------------- Header ------------------------------ */
+/*  ---------************ Menu Nav ************---------- */
 .nav-menu {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 8rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     align-items: center;
+    transition: 0.6s;
+    padding: 0 4rem;
+    z-index: 10000;
+}
+.nav-menu.sticky{
+    /* padding: 0rem 4rem; */
+    background: rgba(68, 31, 170, 0.87);
 }
 
 .Logo {
+    position: relative;
     width: 10rem;
-    margin-left: 4rem;
-    justify-content: left;
     cursor: pointer;
+    transition: 0.6s;
 }
 
 .Logo img {
     width: 100%;
 }
 
-/* Menu-text */
+/* ---------************ Menu-text ************----------  */
 .nav-text {
+    position: relative;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-menu li {
-    padding-right: 3rem;
-    padding-left: 3rem;
+.nav-text li {
+    position: relative;
+    padding-right: 2rem;
+    padding-left: 2rem;
     border-right: 1px solid #FFF;
 }
 
-.nav-menu li a {
-    font-style: normal;
-    font-weight: 500;
+.nav-text li a {
+    position: relative;
     font-size: 2.4rem;
     color: #FFFFFF;
     cursor: pointer;
+    font-weight: 500;
+    transform: 0.6s;
 }
 
-.nav-menu li a i {
+.nav-text li a i {
     padding-right: 1rem;
 }
 
-/* Menu Bars Hamburgesa */
+.nav-text li a:hover{
+    color: #32B6EF;
+}
+
+.nav-menu.sticky .Logo,
+.nav-menu.sticky .nav-text li a{
+    color: #fff;
+    width: 7rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu.sticky .nav-text li a:hover{
+    color: #56f00e;
+}
+/* -------------*********** Menu Bars Hamburgesa  **********------------ */
 .btn-bars {
     display: none;
     font-size: 2.5rem;
@@ -82,16 +103,15 @@ header {
 
 /* Landing header */
 .landin {
+    position: relative;
     width: 100%;
+    height: 100vh;
+    background: url(/img/Landing1.png);
+    background-size: cover;
 }
 
-.landin img {
-    width: 100%;
-    height: 75rem;
-}
-
-/* ------------ Fin Header----------- */
-/* main Container */
+/* ***************** Fin Header -----------> */
+/* --------------------------- main Container ------------------------- */
 main {
     padding-bottom: 2rem;
     margin-bottom: 1rem;
@@ -108,7 +128,7 @@ main {
     position: relative;
 }
 
-/* Timer Contador */
+/* ------------********* Timer Contador *******--------------------- */
 .timer {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -162,7 +182,6 @@ main {
 
 .baner1 h2 {
     padding-top: 10rem;
-    ;
     font-weight: 900;
     font-size: 4.8rem;
     text-align: center;
@@ -182,35 +201,38 @@ main {
     padding-left: 10rem;
     padding-right: 10rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
 .contet-1 {
-    flex: 48%;
+    flex: 50%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10rem 0;
 }
 
 .content-2 {
     flex: 50%;
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 7rem;
 }
 
 .content-2 h3 {
     font-weight: bold;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 2.8rem;
     color: #FFFFFF;
 }
 
 .content-2 p {
     font-weight: normal;
-    font-size: 28px;
-    line-height: 34px;
-
+    font-size: 2.8rem;
     color: #32B6EF;
 }
 
@@ -227,10 +249,10 @@ main {
 }
 
 .box-item {
-    /* background: tomato; */
     width: calc((100% - 2rem) / 3);
     flex: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: .5rem 0;
@@ -245,15 +267,49 @@ main {
     background: none;
     width: 31rem;
     height: 6.2rem;
+    border: none;
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    outline: none;
     border: 4px solid #32B6EF;
     box-sizing: border-box;
-    border-radius: 10px;
+    position: relative;
+    z-index: 1;    
 }
 
 .btn-1 a {
     font-weight: 700;
     font-size: 2rem;
     color: #32B6EF;
+}
+
+.btn-1 a:hover{
+    color: #FFF;
+}
+
+.btn-1:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+
+.btn-1::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #32B6EF;
+}
+
+.btn-1:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 /* Roadmap */
@@ -476,4 +532,73 @@ main {
     font-size: 3.6rem;
     color: #FFFFFF;
     padding-left: 2rem;
+}
+
+/* FAQS  */
+.faqs {
+    width: 100%;
+    background: #060839;
+    padding: 10rem 15rem;
+}
+
+.faqs-content {
+    text-align: left;
+}
+
+.faqs-content img {
+    width: 23rem;
+    height: 12rem;
+}
+
+.faqs-content li {
+    padding-top: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+/* Footer  */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.enlaces-footer {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.link-footer {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+
+.link-footer li a {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 0 3rem;
+}
+
+.Coppi-footer h6 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #353E4D;
+    padding-bottom: 3rem;
 }
