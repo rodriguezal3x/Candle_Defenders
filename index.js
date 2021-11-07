@@ -1,3 +1,8 @@
+window.addEventListener("scroll", function(){
+    var navmenu = document.querySelector(".nav-menu");
+    navmenu.classList.toggle("sticky", this.window.scrollY > 0);
+});
+
 let dias = 20;
 let horas = 0;
 let minutos = 0;

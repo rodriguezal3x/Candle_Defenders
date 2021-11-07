@@ -18,11 +18,11 @@
     <header>
         <!-- Menu-nav  -->
         <nav class="nav-menu">
-            <div class="Logo">
+            <a href="#home" class="Logo">
                 <img src="/img/icon.png" alt="Candle defenders, NFT, Bulls vs bears" title="Candle Defenders">
-            </div>
+            </a>
             <ul class="nav-text">
-                <li><a class="active" href="#Mint">Mint</a></li>
+                <li><a href="#Mint" class="active" >Mint</a></li>
                 <li><a href="#Rarity_Guide">Rarity Guide</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#">FAQs</a></li>
@@ -36,15 +36,12 @@
             </div>
         </nav>
         <!-- Section landin -->
-        <section class="landin">
-            <img src="/img/Landing1.png" alt="">
-        </section>
+        <section id="home" class="landin"></section>
     </header>
     <!-- Main-container  -->
     <main>
         <!-- Reglog Timer -->
-        <a name="Mint"></a>
-        <section class="Mint">
+        <section id="Mint" class="Mint">
             <article class="timer">
                 <div class="cont-temporizador">
                     <div class="bloque">
@@ -61,7 +58,7 @@
                     </div>
                     <div class="bloque">
                         <div class="segundos" id="segundos">--</div>
-                        <p>Seconud</p>
+                        <p>Seconds</p>
                     </div>
                 </div>
                 <img src="/img/timer.png" alt="">
@@ -105,7 +102,7 @@
                     <h3>THE RARITY</h3>
                     <p>Besides their appearance, each Defender holds a Candle. Just as in real charts there are 5 Candle
                         types, each more Bullish/Bearish than the previous one.</p>
-                    <button class="btn-1">
+                    <button  class="btn-1">
                         <a href="#">CHECK OUR RARITY GUIDE</a>
                     </button>
                 </div>
@@ -210,16 +207,42 @@
             </article>
         </section>
         <!--Banner Sales Discord  -->
-        <aside class="banner-discord">
+        <section class="banner-discord">
             <p>Sales has not started yet,<br>Join our community for updates<br>and announcements</p>
             <a class="btn-discord" href="https://discord.gg/ZZ8vXWkH">
                 <i class="fab fa-discord"></i>
                 <h6>Join us on Discord</h6>
             </a>
+        </section>
+        <!-- FAQS -->
+        <aside class="faqs">
+            <ul class="faqs-content">
+                <li><img src="/img/FQAsArtboard.png" alt=""></li>
+                <li>What are NFTs / What is Minting?</li>
+                <li>What are Smart Contracts?</li>
+                <li>What is a Metaverse?</li>
+                <li>Why do you include Whales?</li>
+            </ul>
         </aside>
     </main>
-    <footer>
-        <p> aviso de privacidad </p>
+    <footer class="footer">
+        <div class="enlaces-footer">
+            <img src="/img/icon.png" alt="">
+            <ul class="link-footer">
+                <li><a href="#">Join us on</a></li>
+                <li style="border: none;">
+                    <a href="https://twitter.com/candledefenders"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/ZZ8vXWkH"><i class="fab fa-discord"></i></a>
+                </li>
+                <li><a href="#Mint">Mint</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#Rarity_Guide">Rarity Guide</a></li>
+                <li><a href="#">FAQS</a></li>
+            </ul>
+        </div>
+        <div class="Coppi-footer">
+            <h6>2021 Bulls vs Bears Candle Defenders, all rights reserved.</h6>
+        </div>
     </footer>
 
     <!-- Script  -->
