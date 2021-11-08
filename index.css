@@ -43,7 +43,7 @@ header {
 
 .nav-menu.sticky {
     padding: 0rem 4rem;
-    background: rgba(68, 31, 170, 0.87);
+    background: #441faaf5;
 }
 
 .Logo {
@@ -79,6 +79,7 @@ header {
     cursor: pointer;
     font-weight: 500;
     transform: 0.6s;
+    /* display: block; */
 }
 
 .nav-text li a i {
@@ -104,8 +105,10 @@ header {
 .btn-bars {
     display: none;
     font-size: 2.5rem;
+    line-height: 3rem;
+    /* float: right; */
+    margin-right: 3rem;
     color: #ffffff;
-    margin-right: 2rem;
     cursor: pointer;
 }
 
@@ -360,7 +363,7 @@ main {
     height: 9.5rem;
 }
 
-/* .roadmap-content */
+/* ----------------------------roadmap-content ----------------*/
 .roadmap-contemt {
     width: 100%;
     display: flex;
@@ -511,7 +514,7 @@ main {
     color: #FFFFFF;
 }
 
-/* banner-discord */
+/*----------------------- banner-discord ----------------*/
 .banner-discord {
     background: url(/img/codenumber2.png);
     display: flex;
@@ -557,7 +560,7 @@ main {
     padding-left: 2rem;
 }
 
-/* FAQS  */
+/* ------------------- FAQS -------------------- */
 .faqs {
     width: 100%;
     background: #060839;
@@ -582,7 +585,7 @@ main {
     color: #FFFFFF;
 }
 
-/* Footer  */
+/* ------------------ Footer --------------- */
 .footer {
     width: 100%;
     display: flex;
@@ -718,44 +721,45 @@ main {
         height: 25rem;
         padding: 0 9rem;
     }
-    
+
     .Container-box3 {
         width: calc((100% - 10rem) / 3);
         padding: 0 4rem;
-    
+
     }
-    
+
     .Container-box3 img {
         width: 9rem;
         height: 9rem;
     }
-    
+
     .Container-box3 h5 {
         font-size: 2.5rem;
     }
-    
+
     .Container-box3 p {
         font-size: 1.7rem;
     }
+
     .roadmap-whale {
         padding: 0 10rem;
     }
-    
+
     .whale-container {
         max-width: 70rem;
         height: 33rem;
         padding: 0 4rem;
     }
-    
+
     .whale-container img {
         width: 23rem;
         height: 23rem;
     }
-    
+
     .whale h2 {
         font-size: 2.6rem;
     }
-    
+
     .whale p {
         font-size: 2rem;
         color: #FFFFFF;
@@ -765,53 +769,54 @@ main {
         height: 50rem;
         padding: 10rem 15rem;
     }
-    
+
     .banner-discord p {
         font-size: 2.6rem;
     }
-    
+
     .btn-discord {
         margin-top: 4rem;
         width: 35rem;
         height: 5rem;
     }
-    
+
     .btn-discord i {
         font-size: 2.6rem;
     }
-    
+
     .btn-discord h6 {
         font-size: 2.6rem;
     }
-    
+
     /* FAQS  */
     .faqs {
         padding: 7rem 10rem;
     }
-    
+
     .faqs-content img {
         width: 18rem;
         height: 9rem;
     }
-    
+
     .faqs-content li {
         padding-top: 2rem;
         font-size: 2rem;
     }
-    
-    /* Footer  */ 
+
+    /* Footer  */
     .footer {
         padding: 0 6rem;
-    }   
+    }
+
     .link-footer {
         padding: 0 1rem;
     }
-    
+
     .link-footer li a {
         font-size: 2rem;
         padding: 0 1rem;
     }
-    
+
     .Coppi-footer h6 {
         font-size: 1.8rem;
         line-height: 2.2rem;
@@ -819,4 +824,294 @@ main {
         color: #353E4D;
         padding-bottom: 3rem;
     }
+}
+
+@media screen and (max-width: 680px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-menu.sticky {
+        padding: 0rem 3rem;
+    }
+
+    .baner1 h2 {
+        font-size: 3.5rem;
+    }
+
+    .baner1 p {
+        font-size: 2.8rem;
+    }
+
+    .content-2 {
+        padding: 2rem;
+    }
+
+    .content-2 h3 {
+        font-size: 2.6rem;
+    }
+
+    .content-2 p {
+        font-size: 2.4rem;
+    }
+
+    .container-box1 {
+        flex: 60%;
+    }
+
+    .box-item img {
+        padding: 1rem 0rem;
+    }
+
+    .roadmap-header img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .faqs {
+        padding: 7rem 8rem;
+    }
+
+    .footer {
+        padding: 0 3rem;
+    }
+
+    .link-footer li a {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-menu {
+        padding: 0 1rem;
+    }
+
+    .nav-menu.sticky {
+        padding: 0rem 1rem;
+    }
+
+    .Logo {
+        width: 8rem;
+    }
+
+    .nav-text li {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-right: none;
+    }
+
+    .nav-text li a {
+        font-size: 1.8rem;
+    }
+
+    .landin {
+        max-width: 600px;
+        background-size: 600px;
+        height: 100vh;
+        max-height: 300px;
+    }
+
+    .timer {
+        padding-top: 0rem;
+        padding-bottom: 4rem;
+    }
+
+    .timer img {
+        max-width: 40rem;
+    }
+
+    .cont-temporizador {
+        top: 13rem;
+        margin-left: 5.5rem;
+    }
+
+    .cont-temporizador .bloque {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cont-temporizador .bloque div {
+        font-size: 3rem;
+    }
+
+    .cont-temporizador .bloque p {
+        font-size: 1rem;
+    }
+
+    .baner1 {
+        height: 30rem;
+    }
+
+    .baner1 h2 {
+        font-size: 2.5rem;
+    }
+
+    .baner1 p {
+        font-size: 2rem;
+    }
+
+    .Rarity_Guide {
+        padding: 0 5rem;
+    }
+
+    .content-2 h3 {
+        font-size: 2rem;
+    }
+    .content-2 p {
+        font-size: 2rem;
+        color: #32B6EF;
+    }
+
+    .roadmap-header {
+        height: 30rem;
+    }
+    
+    .roadmap-header img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .roadmap-header h4 {
+        margin-left: 3rem;
+    }
+    
+    
+    .roadmap-header h4 img {
+        width: 25rem;
+        height: 6.5rem;
+    }
+
+
+    .Conteiner-box2 {
+        height: 15rem;
+        max-width: 40rem;
+    }
+
+    .box-value {
+        width: 6rem;
+    }
+
+    .box-title {
+        padding-left: 2rem;
+    }
+
+    .box-title h4 {
+        font-size: 1.8rem;
+    }
+
+    .box-title p {
+        font-size: 1.6rem;
+    }
+
+    .roadmap-contemt .link {
+        max-width: 40rem;
+    }
+
+    
+    .Container-box3 {
+        width: calc((100% - 6rem) / 3);
+        padding: 0 2rem;
+    }
+
+    .Container-box3 img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .Container-box3 h5 {
+        font-size: 2rem;
+    }
+
+    .Container-box3 p {
+        font-size: 1.6rem;
+    }
+
+    .roadmap-item {
+        padding: 0 5rem;
+    }
+
+    .roadmap-whale {
+        padding: 0 3rem;
+    }
+
+    .whale-container {
+        max-width: 50rem;
+        height: 33rem;
+        padding: 0 2rem;
+    }
+
+    .whale-container img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .whale h2 {
+        font-size: 2rem;
+    }
+
+    .whale p {
+        font-size: 1.7rem;
+    }
+
+    .banner-discord {
+        height: 30rem;
+        padding: 5rem 10rem;
+    }
+
+    .banner-discord p {
+        font-size: 2rem;
+    }
+
+    .btn-discord {
+        margin-top: 3rem;
+        width: 30rem;
+        height: 4rem;
+    }
+
+    .btn-discord i {
+        font-size: 2rem;
+    }
+
+    .btn-discord h6 {
+        font-size: 2rem;
+    }
+
+    .faqs {
+        padding: 4rem 7rem;
+    }
+
+    .faqs-content img {
+        width: 15rem;
+        height: 7rem;
+    }
+
+    .faqs-content li {
+        padding-top: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+     /* Footer  */
+     .footer {
+        padding: 0 2rem;
+    }
+
+    .enlaces-footer img{
+        width: 6rem;
+    }
+
+    .link-footer {
+        padding: 0 .5rem;
+    }
+
+    .link-footer li a {
+        font-size: 1.7rem;
+        padding: 0 .5rem;
+    }
+
+    .Coppi-footer h6 {
+        font-size: 1.4rem;
+    }
+
 }
