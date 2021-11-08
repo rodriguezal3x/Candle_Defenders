@@ -21,6 +21,12 @@ body {
 }
 
 /* -------------------------- Header ------------------------------ */
+header {
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
 /*  ---------************ Menu Nav ************---------- */
 .nav-menu {
     position: fixed;
@@ -31,11 +37,12 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 0 4rem;
+    padding: 0 3rem;
     z-index: 10000;
 }
-.nav-menu.sticky{
-    /* padding: 0rem 4rem; */
+
+.nav-menu.sticky {
+    padding: 0rem 4rem;
     background: rgba(68, 31, 170, 0.87);
 }
 
@@ -78,21 +85,22 @@ body {
     padding-right: 1rem;
 }
 
-.nav-text li a:hover{
+.nav-text li a:hover {
     color: #32B6EF;
 }
 
 .nav-menu.sticky .Logo,
-.nav-menu.sticky .nav-text li a{
+.nav-menu.sticky .nav-text li a {
     color: #fff;
     width: 7rem;
     font-size: 1.8rem;
 }
 
-.nav-menu.sticky .nav-text li a:hover{
+.nav-menu.sticky .nav-text li a:hover {
     color: #56f00e;
 }
-/* -------------*********** Menu Bars Hamburgesa  **********------------ */
+
+/* -------------*********** Menu Bars Hamburgesa  **********------------- */
 .btn-bars {
     display: none;
     font-size: 2.5rem;
@@ -101,25 +109,32 @@ body {
     cursor: pointer;
 }
 
-/* Landing header */
+/* --------------------------------- Landing header -------------------- */
 .landin {
     position: relative;
     width: 100%;
     height: 100vh;
     background: url(/img/Landing1.png);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landin img {
+    width: 100%;
+    padding: 0;
+    margin: 0
 }
 
 /* ***************** Fin Header -----------> */
 /* --------------------------- main Container ------------------------- */
 main {
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .Mint {
     width: 100%;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -135,7 +150,8 @@ main {
 }
 
 .timer img {
-    width: 55rem;
+    width: 100%;
+    max-width: 55rem;
 }
 
 .cont-temporizador {
@@ -148,10 +164,11 @@ main {
 }
 
 .cont-temporizador .bloque {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /* margin-left: 2rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -174,6 +191,7 @@ main {
     color: #32B6EF;
 }
 
+/* ------------------------------- Banner1 -------------------------------- */
 .baner1 {
     height: 50rem;
     width: 100%;
@@ -198,8 +216,7 @@ main {
 /* -------------------------- Rarity_Guide -------------------------*/
 .Rarity_Guide {
     width: 100%;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 0 10rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -208,23 +225,26 @@ main {
 }
 
 .contet-1 {
-    flex: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10rem 0;
+    padding-bottom: 10rem;
 }
 
 .content-2 {
+    width: 100%;
     flex: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    padding: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 .content-2 h3 {
+    width: 100%;
     font-weight: bold;
     font-size: 2.8rem;
     color: #FFFFFF;
@@ -238,34 +258,37 @@ main {
 
 
 .container-box1 {
-    flex: 50%;
     width: 100%;
+    flex: 50%;
     background: #020228;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    align-content: center;
 }
 
 .box-item {
-    width: calc((100% - 2rem) / 3);
+    width: calc((100% - 1rem) / 3);
     flex: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: .5rem 0;
 }
 
 .box-item img {
     width: 100%;
+    max-width: 15rem;
+    max-height: 15rem;
+    padding: .5rem .5rem;
 }
 
+/* ---------------************* btn **********---------------- */
 .btn-1 {
     margin-top: 3rem;
     background: none;
-    width: 31rem;
+    width: 100%;
+    max-width: 31rem;
     height: 6.2rem;
     border: none;
     border-radius: 10px;
@@ -274,7 +297,7 @@ main {
     border: 4px solid #32B6EF;
     box-sizing: border-box;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
 
 .btn-1 a {
@@ -283,16 +306,16 @@ main {
     color: #32B6EF;
 }
 
-.btn-1 a:hover{
+.btn-1 a:hover {
     color: #FFF;
 }
 
-.btn-1:hover{
+.btn-1:hover {
     cursor: pointer;
     color: #FFF;
 }
 
-.btn-1::before{
+.btn-1::before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -304,7 +327,7 @@ main {
     background-color: #32B6EF;
 }
 
-.btn-1:hover::before{
+.btn-1:hover::before {
     transition: 0.5s all ease;
     left: 0;
     right: 0;
@@ -312,7 +335,7 @@ main {
     z-index: -1;
 }
 
-/* Roadmap */
+/* --------------------------------------- Roadmap ----------------------- */
 .roadmap-header {
     height: 45rem;
     width: 100%;
@@ -412,7 +435,7 @@ main {
     color: #FFFFFF;
 }
 
-/* roadmap-item */
+/* _-----------------***************** roadmap-item **********--------------- */
 .roadmap-item {
     height: 30rem;
     width: 100%;
@@ -588,8 +611,7 @@ main {
 .link-footer li a {
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 2.4rem;
     color: #FFFFFF;
     padding: 0 3rem;
 }
@@ -601,4 +623,200 @@ main {
     text-align: center;
     color: #353E4D;
     padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 60%;
+    }
+
+    .nav-text li a {
+        font-size: 2rem;
+    }
+
+    .baner1 h2 {
+        font-size: 4.2rem;
+    }
+
+    .landin {
+        max-width: 800px;
+        background-size: 800px;
+    }
+
+    .content-2 h3 {
+        font-size: 2.2rem;
+    }
+
+    .content-2 p {
+        font-size: 2rem;
+    }
+
+    .btn-1 {
+        max-width: 25rem;
+        height: 5.2rem;
+    }
+
+    .btn-1 a {
+        font-size: 1.5rem;
+    }
+
+    .roadmap-header img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .roadmap-header h4 {
+        margin-left: 7rem;
+    }
+
+    .roadmap-header h4 img {
+        width: 35rem;
+        height: 7.5rem;
+    }
+
+    .Conteiner-box2 {
+        height: 15rem;
+        max-width: 60rem;
+    }
+
+    .box-value {
+        width: 7rem;
+    }
+
+    .box-title {
+        padding-left: 4rem;
+    }
+
+    .box-value span {
+        height: 5rem;
+        width: 7rem;
+    }
+
+    .box-value img {
+        width: .7rem;
+        height: 9rem;
+    }
+
+    .box-title h4 {
+        font-size: 2rem;
+    }
+
+    .box-title p {
+        font-size: 2rem;
+    }
+
+    .roadmap-contemt .link {
+        height: 7rem;
+        max-width: 60rem;
+    }
+
+    .link a {
+        font-size: 2rem;
+    }
+
+    .roadmap-item {
+        height: 25rem;
+        padding: 0 9rem;
+    }
+    
+    .Container-box3 {
+        width: calc((100% - 10rem) / 3);
+        padding: 0 4rem;
+    
+    }
+    
+    .Container-box3 img {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+    .Container-box3 h5 {
+        font-size: 2.5rem;
+    }
+    
+    .Container-box3 p {
+        font-size: 1.7rem;
+    }
+    .roadmap-whale {
+        padding: 0 10rem;
+    }
+    
+    .whale-container {
+        max-width: 70rem;
+        height: 33rem;
+        padding: 0 4rem;
+    }
+    
+    .whale-container img {
+        width: 23rem;
+        height: 23rem;
+    }
+    
+    .whale h2 {
+        font-size: 2.6rem;
+    }
+    
+    .whale p {
+        font-size: 2rem;
+        color: #FFFFFF;
+    }
+
+    .banner-discord {
+        height: 50rem;
+        padding: 10rem 15rem;
+    }
+    
+    .banner-discord p {
+        font-size: 2.6rem;
+    }
+    
+    .btn-discord {
+        margin-top: 4rem;
+        width: 35rem;
+        height: 5rem;
+    }
+    
+    .btn-discord i {
+        font-size: 2.6rem;
+    }
+    
+    .btn-discord h6 {
+        font-size: 2.6rem;
+    }
+    
+    /* FAQS  */
+    .faqs {
+        padding: 7rem 10rem;
+    }
+    
+    .faqs-content img {
+        width: 18rem;
+        height: 9rem;
+    }
+    
+    .faqs-content li {
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    
+    /* Footer  */ 
+    .footer {
+        padding: 0 6rem;
+    }   
+    .link-footer {
+        padding: 0 1rem;
+    }
+    
+    .link-footer li a {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .Coppi-footer h6 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+        color: #353E4D;
+        padding-bottom: 3rem;
+    }
 }
